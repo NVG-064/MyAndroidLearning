@@ -6,4 +6,7 @@
     <string name="nim_hint">Your NIM (Nomor Induk Mahasiswa)</string>
     <string name="current_semester_hint">Current semester</string>
     <string name="implicit_intent_title">Implicit Intent</string>
+    <string name="broadcast_receiver_title">Broadcast Receiver</string>
+    <string name="dynamic_broadcast_receiver_title">Dynamic Broadcast Receiver</string>
+    <string name="custom_broadcast_receiver_title">Custom Broadcast Receiver</string>
 </resources>

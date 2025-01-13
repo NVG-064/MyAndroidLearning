@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import io.github.nvg064.myandroidlearning.R
 import io.github.nvg064.myandroidlearning.app_component.activity_lifecycle.ui.view.activity.FirstLifeCycleActivity
+import io.github.nvg064.myandroidlearning.app_component.broadcast_receiver.BroadcastReceiverActivity
 import io.github.nvg064.myandroidlearning.app_component.intent.IntentActivity
 import io.github.nvg064.myandroidlearning.databinding.ActivityAppComponentBinding
 
@@ -30,6 +31,7 @@ class AppComponentActivity : AppCompatActivity(), View.OnClickListener {
 
         _binding.btnActivityLifecycle.setOnClickListener(this)
         _binding.btnIntent.setOnClickListener(this)
+        _binding.btnBroadcastReceiver.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -41,6 +43,10 @@ class AppComponentActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn_intent -> {
                 val intentIntent = Intent(this@AppComponentActivity, IntentActivity::class.java)
                 startActivity(intentIntent)
+            }
+            R.id.btn_broadcast_receiver -> {
+                val broadcastReceiverIntent = Intent(this@AppComponentActivity, BroadcastReceiverActivity::class.java)
+                startActivity(broadcastReceiverIntent)
             }
         }
     }
