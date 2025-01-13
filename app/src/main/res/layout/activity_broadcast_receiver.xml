@@ -20,6 +20,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tv_broadcast_receiver_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:text="Source: https://medium.com/@khush.panchal123/understanding-broadcast-receivers-in-android-044fbfaa1330"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_broadcast_receiver_title" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gl_broadcast_receiver"
         android:layout_width="wrap_content"

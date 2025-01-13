@@ -1,6 +1,7 @@
 package io.github.nvg064.myandroidlearning.app_component.broadcast_receiver
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -28,10 +29,16 @@ class BroadcastReceiverActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         _binding.btnDynamicBroadcastReceiver.setOnClickListener(this)
+        _binding.tvBroadcastReceiverDesc.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when (v?.id) {
+            R.id.tv_broadcast_receiver_desc -> {
+                val url = "https://medium.com/@khush.panchal123/understanding-broadcast-receivers-in-android-044fbfaa1330"
+                val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                startActivity(browserIntent)
+            }
             R.id.btn_dynamic_broadcast_receiver -> {
                 val dynamicBroadcastReceiverIntent = Intent(this@BroadcastReceiverActivity, DynamicBroadcastReceiverActivity::class.java)
                 startActivity(dynamicBroadcastReceiverIntent)
