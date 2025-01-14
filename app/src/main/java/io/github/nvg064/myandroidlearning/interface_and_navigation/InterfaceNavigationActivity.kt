@@ -8,7 +8,7 @@ import androidx.core.view.WindowInsetsCompat
 import io.github.nvg064.myandroidlearning.R
 import io.github.nvg064.myandroidlearning.databinding.ActivityInterfaceAndNavigationBinding
 
-class InterfaceAndNavigationActivity : AppCompatActivity() {
+class InterfaceNavigationActivity : AppCompatActivity() {
     private lateinit var _binding: ActivityInterfaceAndNavigationBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
