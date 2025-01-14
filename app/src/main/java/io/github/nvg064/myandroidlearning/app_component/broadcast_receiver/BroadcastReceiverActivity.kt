@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import io.github.nvg064.myandroidlearning.R
+import io.github.nvg064.myandroidlearning.app_component.broadcast_receiver.custom_broadcast.ui.view.activity.CustomBroadcastReceiverActivity
 import io.github.nvg064.myandroidlearning.app_component.broadcast_receiver.dynamic_broadcast.ui.view.activity.DynamicBroadcastReceiverActivity
 import io.github.nvg064.myandroidlearning.databinding.ActivityBroadcastReceiverBinding
 
@@ -29,6 +30,7 @@ class BroadcastReceiverActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         _binding.btnDynamicBroadcastReceiver.setOnClickListener(this)
+        _binding.btnCustomBroadcastReceiver.setOnClickListener(this)
         _binding.tvBroadcastReceiverDesc.setOnClickListener(this)
     }
 
@@ -42,6 +44,10 @@ class BroadcastReceiverActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn_dynamic_broadcast_receiver -> {
                 val dynamicBroadcastReceiverIntent = Intent(this@BroadcastReceiverActivity, DynamicBroadcastReceiverActivity::class.java)
                 startActivity(dynamicBroadcastReceiverIntent)
+            }
+            R.id.btn_custom_broadcast_receiver -> {
+                val customBroadcastReceiverIntent = Intent(this@BroadcastReceiverActivity, CustomBroadcastReceiverActivity::class.java)
+                startActivity(customBroadcastReceiverIntent)
             }
         }
     }

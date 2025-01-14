@@ -19,6 +19,9 @@
         android:theme="@style/Theme.MyAndroidLearning"
         tools:targetApi="31">
         <activity
+            android:name=".app_component.broadcast_receiver.custom_broadcast.ui.view.activity.CustomBroadcastReceiverActivity"
+            android:exported="false" />
+        <activity
             android:name=".app_component.broadcast_receiver.dynamic_broadcast.ui.view.activity.DynamicBroadcastReceiverActivity"
             android:exported="false" />
         <activity
