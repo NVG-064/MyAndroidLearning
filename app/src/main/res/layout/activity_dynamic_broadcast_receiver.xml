@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginHorizontal="12dp"
-        android:text="To get complete list of system broadcast actions, see the BROADCAST_ACTIONS.TXT file in the Android SDK. Located in Sdk (or android-sdks)/platforms/<android-sdk-version>/data/broadcast_actions.txt"
+        android:text="To get complete list of system broadcast actions, see the BROADCAST_ACTIONS.TXT file in the Android SDK. Located in &lt;android-sdk-path&gt;/platforms/&lt;android-sdk-version&gt;/data/broadcast_actions.txt"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
