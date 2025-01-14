@@ -33,4 +33,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_dynamic_broadcast_receiver_title" />
 
+    <TextView
+        android:id="@+id/tv_dynamic_broadcast_receiver_desc2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="12dp"
+        android:text="To get complete list of system broadcast actions, see the BROADCAST_ACTIONS.TXT file in the Android SDK. Located in Sdk (or android-sdks)/platforms/<android-sdk-version>/data/broadcast_actions.txt"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_dynamic_broadcast_receiver_desc" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
