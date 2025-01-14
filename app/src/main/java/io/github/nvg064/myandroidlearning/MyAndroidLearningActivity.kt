@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import io.github.nvg064.myandroidlearning.app_component.AppComponentActivity
 import io.github.nvg064.myandroidlearning.databinding.ActivityMyAndroidLearningBinding
+import io.github.nvg064.myandroidlearning.interface_and_navigation.InterfaceAndNavigationActivity
 
 class MyAndroidLearningActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var _binding: ActivityMyAndroidLearningBinding
@@ -27,6 +28,7 @@ class MyAndroidLearningActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         _binding.btnAppComponent.setOnClickListener(this)
+        _binding.btnInterfaceAndNavigation.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -34,6 +36,10 @@ class MyAndroidLearningActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn_app_component -> {
                 val appComponentIntent = Intent(this@MyAndroidLearningActivity, AppComponentActivity::class.java)
                 startActivity(appComponentIntent)
+            }
+            R.id.btn_interface_and_navigation -> {
+                val interfaceAndNavigationIntent = Intent(this@MyAndroidLearningActivity, InterfaceAndNavigationActivity::class.java)
+                startActivity(interfaceAndNavigationIntent)
             }
         }
     }

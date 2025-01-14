@@ -5,14 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyAndroidLearningActivity">
+    tools:context=".interface_and_navigation.InterfaceAndNavigationActivity">
 
     <TextView
         android:id="@+id/tv_app_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/app_name"
+        android:text="@string/interface_and_navigation_title"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -21,54 +21,65 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/gl_intent"
+        android:id="@+id/gl_interface_and_navigation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="101dp" />
 
     <Button
-        android:id="@+id/btn_app_component"
+        android:id="@+id/btn_layouts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="12dp"
         android:layout_marginTop="12dp"
-        android:text="App Components"
+        android:text="Layouts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/gl_intent" />
+        app:layout_constraintTop_toTopOf="@+id/gl_interface_and_navigation" />
 
     <Button
-        android:id="@+id/btn_interface_and_navigation"
+        android:id="@+id/btn_elements"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="12dp"
         android:layout_marginTop="12dp"
-        android:text="@string/interface_and_navigation_title"
+        android:text="Elements"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_app_component" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_layouts" />
 
     <Button
-        android:id="@+id/btn_design_and_architecture"
+        android:id="@+id/btn_md3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="12dp"
         android:layout_marginTop="12dp"
-        android:text="Design &amp; Architecture"
+        android:text="Material Design 3 (MD3)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_interface_and_navigation" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_elements" />
 
     <Button
-        android:id="@+id/btn_storage"
+        android:id="@+id/btn_nav_component"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="12dp"
         android:layout_marginTop="12dp"
-        android:text="Storage"
+        android:text="Navigation Component"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_design_and_architecture" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_md3" />
+
+    <Button
+        android:id="@+id/btn_design_exercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="12dp"
+        android:text="Navigation Component"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_nav_component" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
